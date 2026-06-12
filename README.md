@@ -45,7 +45,7 @@ cp .env.example .env
 
 ### 3. Start databases
 ```bash
-pnpm docker:up
+docker-compose up -d
 ```
 
 ### 4. Build shared package
