@@ -1,0 +1,18 @@
+.theme-ocean {
+  --background: oklch(0.988 0.015 220);
+  --foreground: oklch(0.17 0.04 220);
+  --card: oklch(0.988 0.015 220);
+  --card-foreground: oklch(0.17 0.04 220);
+  --primary: oklch(0.45 0.15 220);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.92 0.03 220);
+  --secondary-foreground: oklch(0.3 0.09 220);
+  --muted: oklch(0.95 0.018 220);
+  --muted-foreground: oklch(0.52 0.04 220);
+  --accent: oklch(0.45 0.15 220);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.03 220);
+  --input: oklch(0.88 0.03 220);
+  --ring: oklch(0.45 0.15 220);
+}

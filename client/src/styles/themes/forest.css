@@ -1,0 +1,18 @@
+.theme-forest {
+  --background: oklch(0.985 0.01 145);
+  --foreground: oklch(0.18 0.04 145);
+  --card: oklch(0.985 0.01 145);
+  --card-foreground: oklch(0.18 0.04 145);
+  --primary: oklch(0.42 0.13 145);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.92 0.025 145);
+  --secondary-foreground: oklch(0.3 0.08 145);
+  --muted: oklch(0.95 0.015 145);
+  --muted-foreground: oklch(0.52 0.04 145);
+  --accent: oklch(0.42 0.13 145);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.03 145);
+  --input: oklch(0.88 0.03 145);
+  --ring: oklch(0.42 0.13 145);
+}

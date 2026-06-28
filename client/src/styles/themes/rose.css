@@ -1,0 +1,18 @@
+.theme-rose {
+  --background: oklch(0.999 0.005 10);
+  --foreground: oklch(0.2 0.03 10);
+  --card: oklch(0.999 0.005 10);
+  --card-foreground: oklch(0.2 0.03 10);
+  --primary: oklch(0.55 0.2 10);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.94 0.02 10);
+  --secondary-foreground: oklch(0.4 0.1 10);
+  --muted: oklch(0.96 0.01 10);
+  --muted-foreground: oklch(0.55 0.04 10);
+  --accent: oklch(0.55 0.2 10);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0.02 10);
+  --input: oklch(0.9 0.02 10);
+  --ring: oklch(0.55 0.2 10);
+}
