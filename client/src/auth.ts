@@ -42,15 +42,24 @@ export const config: NextAuthConfig = {
   callbacks: {
     async authorized({ auth, request }) {
       const isLoggedIn = !!auth?.user;
-      const isOnLoginPage = request.nextUrl.pathname.startsWith("/login");
+      const PUBLIC_PAGES: string[] = [ROUTES.LOGIN, ROUTES.REGISTER];
+      const PROTECTED_PAGES: string[] = [
+        ROUTES.CHAT,
+        ROUTES.CHAT_ROOM("1"),
+        ROUTES.HOME,
+        ROUTES.PROFILE,
+        ROUTES.SETTINGS,
+      ];
+
+      const currentPage = request.nextUrl.pathname;
 
       // logged in + visits public page → redirect to chat page
-      if (isLoggedIn && isOnLoginPage) {
+      if (isLoggedIn && PUBLIC_PAGES.includes(currentPage)) {
         return Response.redirect(new URL(ROUTES.CHAT, request.nextUrl));
       }
 
       // not logged in + visits protected page → redirect to login
-      if (!isLoggedIn && !isOnLoginPage) {
+      if (!isLoggedIn && PROTECTED_PAGES.includes(currentPage)) {
         return Response.redirect(new URL(ROUTES.LOGIN, request.nextUrl));
       }
 

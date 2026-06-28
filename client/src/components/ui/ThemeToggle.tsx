@@ -28,7 +28,7 @@ export function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        {THEMES.map(({ value, label, icon }) => (
+        {THEMES.map(({ value, label, Icon }) => (
           <DropdownMenuItem
             key={value}
             onClick={() => setTheme(value)}
@@ -37,7 +37,7 @@ export function ThemeToggle() {
               mounted && theme === value && "font-semibold bg-accent",
             )}
           >
-            <span>{icon}</span>
+            <span>{<Icon />}</span>
             <span>{label}</span>
           </DropdownMenuItem>
         ))}

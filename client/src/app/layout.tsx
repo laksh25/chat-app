@@ -4,7 +4,7 @@ import { SessionProvider } from "next-auth/react";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { THEMES } from "@/constants/theme";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -32,16 +32,9 @@ export default function RootLayout({
             attribute="class"
             defaultTheme="system"
             enableSystem
-            themes={[
-              "light",
-              "dark",
-              "theme-rose",
-              "theme-forest",
-              "theme-ocean",
-            ]}
+            themes={THEMES.map((theme) => theme.value)}
             disableTransitionOnChange
           >
-            <ThemeToggle />
             {children}
           </ThemeProvider>
         </SessionProvider>
