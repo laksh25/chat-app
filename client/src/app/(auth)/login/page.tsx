@@ -140,7 +140,7 @@ const Login = () => {
             <Button
               variant="link"
               type="button"
-              className="h-auto p-0 text-sm"
+              className="h-auto p-0 text-sm border-none"
               onClick={() => router.push(ROUTES.REGISTER)}
             >
               Create account

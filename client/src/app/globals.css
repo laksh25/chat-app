@@ -11,27 +11,44 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-sm: calc(var(--radius) - 4px); /* rounded-sm  */
+  --radius-md: calc(var(--radius) - 2px); /* rounded-md  */
+  --radius-lg: var(--radius); /* rounded-lg  */
+  --radius-xl: calc(var(--radius) + 4px); /* rounded-xl  */
 
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
+  --color-background: var(--background); /* bg-background, text-background */
+  --color-foreground: var(--foreground); /* text-foreground */
+
+  --color-card: var(--card); /* bg-card */
+  --color-card-foreground: var(--card-foreground); /* text-card-foreground */
+
+  --color-primary: var(--primary); /* bg-primary, border-primary */
+  --color-primary-foreground: var(
+    --primary-foreground
+  ); /* text-primary-foreground (text on top of primary bg) */
+
+  --color-secondary: var(--secondary); /* bg-secondary */
+  --color-secondary-foreground: var(
+    --secondary-foreground
+  ); /* text-secondary-foreground */
+
+  --color-muted: var(--muted); /* bg-muted (subtle backgrounds) */
+  --color-muted-foreground: var(
+    --muted-foreground
+  ); /* text-muted-foreground (subtle/secondary text) */
+
+  --color-accent: var(--accent); /* bg-accent (hover states, highlights) */
+  --color-accent-foreground: var(
+    --accent-foreground
+  ); /* text-accent-foreground */
+
+  --color-destructive: var(
+    --destructive
+  ); /* bg-destructive, text-destructive (errors, delete buttons) */
+
+  --color-border: var(--border); /* border-border (default border color) */
+  --color-input: var(--input); /* border-input (form field borders) */
+  --color-ring: var(--ring); /* ring-ring (focus ring color) */
 }
 
 /* ── Base styles ── */
